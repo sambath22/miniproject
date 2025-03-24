@@ -93,6 +93,8 @@ header .navbar {
 }
 
 header .navbar .navbar-brand {
+   font-weight: 800;
+  font-size: 80px;
   text-decoration: none;
   color: white;
   font-size: 20px;
