@@ -1,0 +1,540 @@
+@import url("https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", Kantumruy Pro, serif;
+  /* background-color: #eadeec; */
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.row {
+  display: flex;
+  /* justify-content: space-between; */
+  margin-inline: -10px;
+  flex-wrap: wrap;
+}
+.col-4 {
+  width: 33.33333333333333%;
+  padding-inline: 10px;
+  margin-bottom: 20px;
+}
+.col-5 {
+  width: 41.66666666666667%;
+  /* padding-inline: 10px; */
+}
+.col-6 {
+  width: 50%;
+  padding-inline: 10px;
+  margin-bottom: 20px;
+  /* padding-inline: 10px; */
+}
+.col-1 {
+  width: 8.333333333333333%;
+}
+.col-2 {
+  width: 16.66666666666667%;
+}
+.col-3 {
+  width: 25%;
+}
+
+.col-7 {
+  width: 58.33333333333333%;
+}
+.col-8 {
+  width: 66.66666666666667%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33333333333333%;
+}
+.col-11 {
+  width: 91.66666666666667%;
+}
+.col-12 {
+  width: 100%;
+  padding-inline: 10px;
+  margin-bottom: 20px;
+}
+/* ===================NAVBAR [START]======================== */
+
+header {
+  background-color: #c42a00;
+  width: 100%;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  /* background-color: #333; */
+  overflow: hidden;
+  z-index: 1000; /* Ensures the navbar stays on top of other elements */
+}
+
+header .navbar .navbar-brand {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+header .navbar .navbar-nav {
+  list-style-type: none;
+  display: flex;
+}
+
+header .navbar .navbar-nav .nav-item .nav-link {
+  /* background-color: red; */
+  padding: 10px 24px;
+  display: inline-block;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  /* color: rgb(0, 0, 19); */
+  color: white;
+  transition-duration: 0.5s;
+}
+
+/* header .navbar .navbar-nav .nav-item .nav-link:hover {
+    background-color: #e9b71a;
+    color: #fff;
+  } */
+
+/* header .navbar .navbar-nav .nav-item .nav-link.active {
+    background-color: #e9b71a;
+    color: #fff;
+  } */
+
+header .navbar .group-btn .btn {
+  text-decoration: none;
+  padding: 10px 10px;
+  display: inline-block;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  border: 2px solid white;
+}
+
+header .navbar .group-btn .btn-login {
+  /* border: 2px solid rgb(2, 2, 90); */
+  border-color: #e9b71a;
+  color: white;
+  transition-duration: 0.5s;
+}
+
+header .navbar .group-btn .btn-login:hover {
+  background-color: #e9b71a;
+  color: #fff;
+  border-color: #e9b71a;
+}
+
+header .navbar .group-btn .btn-register {
+  background-color: #e9b71a;
+  /* border: 2px solid rgb(2, 2, 90); */
+  border-color: #e9b71a;
+  color: white;
+  transition-duration: 0.5s;
+}
+header .navbar .group-btn .btn-register:hover {
+  background-color: #ce9f06;
+  border-color: #ce9f06;
+}
+/* ===================NAVBAR [END]======================== */
+i {
+  font-size: 10px;
+}
+
+section {
+  padding: 60px 0;
+}
+
+section .row {
+  margin-inline: -15px;
+}
+
+section .row .col-6,
+section .row .col-12 {
+  padding-inline: 15px;
+  margin-bottom: 20px;
+}
+
+input {
+  border: 1px solid rgb(186, 186, 186);
+  padding: 10px 16px;
+  border-radius: 6px;
+  width: 100%;
+}
+
+input:focus {
+  outline: none;
+}
+
+/* ================= */
+
+.form-register .reigister-contain {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.form-register .reigister-contain .row {
+  align-items: center;
+}
+.form-register .reigister-contain .row .detail {
+  background-color: #d4d4d4;
+  padding: 50px 40px;
+  border-radius: 10px;
+}
+
+.form-register .reigister-contain .detail h1 {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.form-register .reigister-contain .detail p {
+  margin-bottom: 30px;
+  text-align: center;
+  color: rgba(128, 128, 128, 0.616);
+  font-size: 15px;
+}
+
+/* ================create email[START]===================== */
+
+.form-register .reigister-contain .detail .group-input label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+/* ================create email[END]===================== */
+
+/* ================create password[START]===================== */
+.form-register .reigister-contain .detail .group-input {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+.form-register .reigister-contain .detail .group-input {
+  margin-top: 4px;
+}
+/* ================create password[END]===================== */
+
+/* ===================button [START] ======================== */
+button {
+  width: 100%;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+  margin-right: 10px;
+  /* padding-inline: 15px; */
+}
+#Btn-signin {
+  background-color: rgb(38, 38, 196);
+  color: white;
+  margin-bottom: 10px;
+}
+#Btn-signin:hover {
+  background-color: #0a1450;
+  color: white;
+}
+#Btn-createButton {
+  background-color: #ddd;
+  color: #333;
+}
+
+#Btn-create:hover {
+  background-color: #ccc;
+}
+/* ===================button [END] ======================== */
+
+/* ====================blog login================ */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-1 {
+  width: 8.333333333333333%;
+}
+.col-2 {
+  width: 16.66666666666667%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33333333333333%;
+}
+.col-5 {
+  width: 41.66666666666667%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33333333333333%;
+}
+.col-8 {
+  width: 66.66666666666667%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33333333333333%;
+}
+.col-11 {
+  width: 91.66666666666667%;
+}
+.col-12 {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+section {
+  padding: 60px 0;
+}
+
+.group-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.group-input label {
+  font-size: 16px;
+  color: rgb(81, 81, 81);
+  /* margin-bottom: -4px; */
+}
+
+.group-input .input-icon {
+  /* background-color: gray; */
+  position: relative;
+}
+
+.group-input .input-icon i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgb(179, 179, 179);
+}
+
+.group-input .input-icon input {
+  width: 100%;
+  padding: 6px 16px;
+  border: 1px solid rgb(179, 179, 179);
+  border-radius: 6px;
+  color: gray;
+}
+
+.group-input .input-icon input:focus {
+  outline: none;
+}
+
+/* ================== */
+.group-selct {
+  display: flex;
+  flex-direction: column;
+}
+
+.group-selct label {
+  font-size: 16px;
+  color: rgb(81, 81, 81);
+}
+
+.group-selct select {
+  width: 100%;
+  padding: 6px 16px;
+  border: 1px solid rgb(179, 179, 179);
+  border-radius: 6px;
+  color: gray;
+}
+
+.group-selct select::placeholder {
+  color: gray;
+}
+
+.group-selct select:focus {
+  outline: none;
+}
+
+/* ============= */
+.group-radio .d-flex {
+  display: flex;
+  gap: 20px;
+  padding: 4px 0;
+}
+
+.group-radio .input-span {
+  display: flex;
+}
+
+/* =============================================================================== */
+.form-login-sinup {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+
+.form-login-sinup .detail {
+  width: 60%;
+  background-color: #fff;
+  padding: 14px 40px;
+  border-radius: 10px;
+}
+
+.form-login-sinup .detail .row {
+  margin: 0 -15px;
+}
+
+.form-login-sinup .detail .row .col-6,
+.form-login-sinup .detail .row .col-12 {
+  padding: 0 15px;
+  margin-bottom: 20px;
+}
+
+.form-login-sinup .detail h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.form-login-sinup .detail .info {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.form-login-sinup .detail .info hr {
+  position: absolute;
+  top: 10px;
+  width: 70%;
+  height: 4px;
+  border: none;
+  background-color: rgb(223, 223, 223);
+}
+
+.form-login-sinup .detail .info .main-item {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  z-index: 1;
+}
+
+.form-login-sinup .detail .info .main-item:nth-child(1) .item {
+  background-color: darkblue;
+  color: #fff;
+}
+
+.form-login-sinup .detail .info .item {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 4px;
+  background-color: rgb(222, 222, 222);
+  text-align: center;
+  line-height: 30px;
+  border-radius: 100%;
+  color: darkgray;
+}
+
+.form-login-sinup .detail .add-photo {
+  /* background-color: red; */
+}
+
+.input-photo {
+  width: 80px;
+  height: 80px;
+  background-color: blue;
+  display: flex;
+  align-items: center;
+}
+
+/*===============[footer START]==============*/
+
+footer {
+  /* margin: 30px 0; */
+  height: 300px;
+  padding: 20px 0;
+  background-color: rgba(201, 37, 37, 0.87);
+  /* display: inline-block; */
+  display: flex;
+  justify-content: space-around;
+  /* margin-bottom: 30px; */
+}
+.col-4 {
+  width: 33.33333333333333%;
+}
+.footer-left ul {
+  /* text-align: center; */
+  color: white;
+  list-style: none;
+  padding: 0;
+}
+.footer-left h4 {
+  /* text-align: center; */
+  /* font-size: 20px; */
+  color: white;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.footer-left p {
+  font-size: 13px;
+  color: rgb(255, 255, 255);
+  padding: 10px 0 70px 0;
+}
+
+/*===============[footer END]==============*/

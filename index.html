@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>burger</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="assets/css/style.css" /> -->
+    <link rel="stylesheet" href="assets/css/test.css" />
+    <style>
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <a class="navbar-brand" href="#"> Burger shop </a>
+
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">MENU</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">PAGE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="assets/page/contact.html">CONTACET</a>
+            </li>
+          </ul>
+
+          <div class="group-btn">
+            <a class="btn btn-login" href="#">ORDER NOW</a>
+            <a class="btn btn-register" href="#">LOGIN</a>
+          </div>
+          
+        </nav>
+       
+      </div>
+    </header>
+    <main>
+      
+      <section class="hero-banner">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img
+              src="assets/images/burger/banner_slide01.png"
+              style="width: 100%"
+            />
+            <div class="text">
+              <h1>
+                Special Burger
+              </h1>
+              <p>Authentic Tastes & Authentic Atmosphere, Change your life with our steaks. </p>
+            </div>
+           
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img
+              src="assets/images/burger/banner_slide02.png"
+              style="width: 100%"
+            />
+            <div class="text">Caption Two</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img
+              src="assets/images/burger/banner_slide03.png"
+              style="width: 100%"
+            />
+            <div class="text">Caption Three</div>
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <br />
+
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </section>
+      <!-- ==========================MENU[START]==================================== -->
+      <section class="menu">
+        <div class="container">
+          <div class="title">
+            <span>Our Menu</span>
+            <h2>Best Burger Menu</h2>
+            <img src="assets/images/burger/heading_element.png" alt="" />
+          </div>
+
+          <div class="row">
+            <div class="col-4">
+              <div class="card">
+                <div class="card-header">
+                  <img src="assets/images/burger/menu1.png" />
+                </div>
+                <div class="card-body">
+                  <h3>Cheesey Chicken</h3>
+                  <p>
+                    Chicken, Eggs, poached, fried, with bacon, chorizo, roasted
+                    roma tomatoes, mushrooms & spinach.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <p>$5.00</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card">
+                <div class="card-header">
+                  <img src="assets/images/burger/menu2.png" />
+                </div>
+                <div class="card-body">
+                  <h3>Maxi Burger</h3>
+                  <p>
+                    Chicken, Eggs, poached, fried, with bacon, chorizo, roasted
+                    roma tomatoes, mushrooms & spinach.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <p>$6.00</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card">
+                <div class="card-header">
+                  <img src="assets/images/burger/menu3.png" />
+                </div>
+                <div class="card-body">
+                  <h3>Cheesey Chicken</h3>
+                  <p>
+                    Chicken, Eggs, poached, fried, with bacon, chorizo, roasted
+                    roma tomatoes, mushrooms & spinach.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <p>$8.00</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card">
+                <div class="card-header">
+                  <img src="assets/images/burger/menu4.png" />
+                </div>
+                <div class="card-body">
+                  <h3>Cheesey Chicken</h3>
+                  <p>
+                    Chicken, Eggs, poached, fried, with bacon, chorizo, roasted
+                    roma tomatoes, mushrooms & spinach.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <p>$4.00</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card">
+                <div class="card-header">
+                  <img src="assets/images/burger/menu5.png" />
+                </div>
+                <div class="card-body">
+                  <h3>Cheesey Chicken</h3>
+                  <p>
+                    Chicken, Eggs, poached, fried, with bacon, chorizo, roasted
+                    roma tomatoes, mushrooms & spinach.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <p>$2.50</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card">
+                <div class="card-header">
+                  <img src="assets/images/burger/menu6.png" />
+                </div>
+                <div class="card-body">
+                  <h3>Cheesey Chicken</h3>
+                  <p>
+                    Chicken, Eggs, poached, fried, with bacon, chorizo, roasted
+                    roma tomatoes, mushrooms & spinach.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <p>$5.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+       <!-- ==========================MENU[END]==================================== -->
+
+
+      <!-- <section class="discount">
+        <div class="row">
+          <div class="col-5">
+            <div class="item1">
+              <img src="assets/images/burger/kfc.png" alt="" />
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="item2"></div>
+          </div>
+        </div>
+      </section> -->
+      <section class="food-banner">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <div class="title">
+                <h2>crispy, every bite taste</h2>
+                <h1>SUPER</h1>
+                <h1>DELICIOUS</h1>
+                <p>
+                  Quickly design and customize responsive mobile-first sites
+                  with Bootstrap, the world’s most popular front-end open source
+                  toolkit!
+                </p>
+                <div class="group-btn">
+                  <a href="#" class="btn btn-get-start">Get Start</a>
+
+                  <a href="#" class="btn btn-learn-more">Learn More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="image">
+                <img src="assets/images/burger/kfc.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="promotion">
+        <div class="container">
+          <div class="row">
+            <div class="col-4">
+              <div class="promotion-img">
+                <img src="assets/images/burger/promotion.png" alt="" />
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="promotion-img">
+                <img src="assets/images/burger/promotion2.png" alt="" />
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="promotion-img">
+                <img src="assets/images/burger/promotion3.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="menulist">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <div class="burger-price-img">
+                <img src="assets/images/burger/menulist_01.png" alt="" />
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="burger-details">
+                <h1>BURGER MENU</h1>
+                <div class="burger-item">
+                  <img
+                    src="assets/images/burger/menudetail2.png"
+                    alt="Cheesy Chicken Burger"
+                  />
+                  <div class="item-details">
+                    <h3>CHEESY CHICKEN BURGER <span style="color: red">NEW</span></h3>
+                    <p>
+                      Beef, Eggs, poached, fried, with bacon, chorizo, roasted roma
+                      tomatoes.
+                    </p>
+                  </div>
+                  <span class="item-price">$16.00</span>
+                </div>
+                <div class="burger-item">
+                  <img src="assets/images/burger/menudetail3.png" alt="Maxi Burger" />
+                  <div class="item-details">
+                    <h3>MAXI BURGER</h3>
+                    <p>
+                      Sliced beef in a large bowl. Whisk together lemon juice, soy
+                      sauce.
+                    </p>
+                  </div>
+                  <span class="item-price">$25.00</span>
+                </div>
+                <div class="burger-item">
+                  <img src="assets/images/burger/menudetail4.png" alt="Double Burger" />
+                  <div class="item-details">
+                    <h3>DOUBLE BURGER</h3>
+                    <p>
+                      Galjoen fish Australian lungfish sea, Shad angler arapaima
+                      .
+                    </p>
+                  </div>
+                  <span class="item-price">$22.00</span>
+                </div>
+                <div class="burger-item">
+                  <img src="assets/images/burger/menudetail5.png" alt="Triple Layer Burger" />
+                  <div class="item-details">
+                    <h3>TRIPLE LAYER BURGER</h3>
+                    <p>
+                      Beef, Eggs, poached, fried, with bacon, chorizo, roasted roma
+                      tomatoes, .
+                    </p>
+                  </div>
+                  <span class="item-price">$18.00</span>
+                </div>
+                <div class="burger-item">
+                  <img src="assets/images/burger/menudetail2.png" alt="Jumbo Burger" />
+                  <div class="item-details">
+                    <h3>JUMBO BURGER</h3>
+                    <p>
+                      Beef, Eggs, poached, fried, with bacon, chorizo, roasted roma
+                      tomatoes.
+                    </p>
+                  </div>
+                  <span class="item-price">$10.00</span>
+                </div>
+                <a href="#" class="order-button">ORDER NOW</a>
+              </div>
+                
+               
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <section  class="food">
+        
+        <div class="container">
+          <div class="row">
+            <div class="col-3">
+              <div class="card">
+                <div class="card-header">
+                  <img src="assets/images/burger/menu6.png" />
+                </div>
+                <div class="card-body">
+                  <a href="#" class="btn-card">Add to card</a>
+                  <h3>Whopper Burger King
+                  </h3>
+                  
+                 
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section> -->
+     <!-- ==================banner[start]====================== -->
+     
+      <section class="banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="banner1">
+              <div class="banner-content">
+                <p>TRY IT TODAY</p>
+                <P>MOST POPULAR BANNER</P>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <div class="row">
+            <div class="col-6">
+              <div class="banner2"></div>
+            </div>
+            <div class="col-6">
+              <div class="banner3"></div>
+            </div>
+          </div>
+      </div>
+     </section>
+    <!-- ==================banner[end]====================== -->
+     <section class="gallery">
+      <div class="container">
+        <div class="row"></div>
+      </div>
+
+     </section>
+    </main>
+    <!-- ===============footer[START]========================= -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <div class="footer-left">
+              <h4>Food Taste</h4>
+              <ul>
+                <li>Contact with us</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="footer-left">
+              <h4>Menu Links</h4>
+
+              <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Menu</li>
+                <li>Service</li>
+                <li>Contact</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="footer-left">
+              <h4>Quick Links</h4>
+              <ul>
+                <li>Features</li>
+                <li>Services</li>
+                <li>Enterprise</li>
+                <li>Pricing</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="footer-left">
+              <h4>Contact</h4>
+              <ul>
+                <li>Phnom Penh</li>
+                <li>+855123456</li>
+                <li>sambath@gmail.com</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+        <!-- ===============footer[END]========================= -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/test.js"></script>
+    <!-- Initialize Swiper -->
+  </body>
+</html>
